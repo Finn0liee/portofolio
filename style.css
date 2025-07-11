@@ -1,0 +1,51 @@
+    body {
+        font-family: Arial, sans-serif;
+        background: #f2f2f2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; 
+      }
+      .kalkulator {
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 16px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+      .layar {
+        width: 93%;
+        height: 60px;
+        font-size: 24px;
+        text-align: right;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        color: black;
+      }
+      .tombol {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 4 kolom sama besar */
+        gap: 10px; /* background tombol kotak kecil atau besar */
+        margin-top: 10px; /* jarak diantara tombol dan layar diatas  */
+      }
+      .tombol button {
+        aspect-ratio: 1 / 1; /* tombol kotak otomatis */
+        width: 100%;
+        font-size: 20px;
+        border: none;
+        border-radius: 10px;
+        background-color: #eee;
+        cursor: pointer; /* animasi muncul ketika diklik */
+        transition: background-color 0.2s;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+      .tombol button:hover {
+        background-color: #ccc; /* warna button ketika diarahkan*/
+      }
+      .operator {
+        background-color: #ffab40;
+      }
+      .operator:hover {
+        background-color: #ff9100;
+      }

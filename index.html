@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Kalkulator Sederhana</title>
+  </head>
+  <body>
+    <div class="kalkulator">
+      <input type="text" class="layar" id="layar" disabled/>
+      <div class="tombol">
+        <button onclick="hapus()">C</button>    
+        <button onclick="tambahInput('(')">(</button>
+        <button onclick="tambahInput(')')">)</button>
+        <button onclick="hapusSatu()">←</button>
+
+        <button onclick="tambahInput('7')">7</button>
+        <button onclick="tambahInput('8')">8</button>
+        <button onclick="tambahInput('9')">9</button>
+        <button onclick="tambahInput('/')" class="operator">:</button>
+
+        <button onclick="tambahInput('4')">4</button>
+        <button onclick="tambahInput('5')">5</button>
+        <button onclick="tambahInput('6')">6</button>
+        <button onclick="tambahInput('*')" class="operator">x</button>
+
+        <button onclick="tambahInput('1')">1</button>
+        <button onclick="tambahInput('2')">2</button>
+        <button onclick="tambahInput('3')">3</button>
+        <button onclick="tambahInput('-')" class="operator">-</button>
+
+        <button onclick="tambahInput('0')">0</button>
+        <button onclick="tambahInput('.')">.</button>
+        <button onclick="hitung()" class="operator">=</button>
+        <button onclick="tambahInput('+')" class="operator">+</button>
+      </div>
+    </div>
+
+    <script src="kotak.js"></script>
+  </body>
+</html>
